@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.holamundo.calculator.presentation.view.CalculatorScreen
 import com.example.holamundo.count.presentation.view.CounterScreen
 import com.example.holamundo.ui.theme.HolaMundoTheme
 
@@ -19,8 +20,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppTheme{
-                CounterScreen()
+            HolaMundoTheme {
+                CalculatorScreen()
             }
         }
     }
