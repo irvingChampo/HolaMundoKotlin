@@ -6,7 +6,6 @@ import kotlinx.coroutines.flow.StateFlow
 
 class CalculatorViewModel : ViewModel() {
 
-    // Estado que representa lo que se ve en la pantalla de la calculadora
     private val _displayText = MutableStateFlow("0")
     val displayText: StateFlow<String> = _displayText
 
