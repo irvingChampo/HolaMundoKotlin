@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.holamundo.calculator.presentation.view.CalculatorScreen
 import com.example.holamundo.count.presentation.view.CounterScreen
+import com.example.holamundo.hangman.presentation.view.HangmanScreen
 import com.example.holamundo.login.presentation.view.LoginScreen
 import com.example.holamundo.ui.theme.HolaMundoTheme
 
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             HolaMundoTheme {
-                LoginScreen()
+                HangmanScreen()
             }
         }
     }
